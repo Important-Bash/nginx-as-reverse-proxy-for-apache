@@ -17,7 +17,7 @@ wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
 echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" > /etc/apt/sources.list.d/php.list
 apt-get update
 apt-get install sudo
-apt-get install nginx php7.1 apache2 
+apt-get install nginx php7.1 php7.1-mbstring php7.1-xml php7.1-pdo php7.1-mysql apache2 
 apt-get -y install libapache2-mod-rpaf
 
 # nano /etc/apache2/ports.conf
